@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*1-header*/
+
+header{
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 25px;
+}
+
+h1{
+    color: white;
+}
+
+/*2-Box1*/
+
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+
+.box1-1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: none;
+}
+
+h3{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.box1-2 > p{
+    padding-left: 5px;
+}
+
+
+/*3-MainBox*/
+
+.mainBox{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mainBox > div:nth-child(even){
+    padding-top: 30px;
+}
+
+
+/*4-ImgBox*/
+
+.ImgBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    width: 50%;
+}
+
+/*4.1-ImgSubBox1*/
+
+.imgSubBox1 > p{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.img{
+    max-width: 110px;
+    width: 100%;
+    height: auto;
+}
+
+/*4.2-ImgSubBox2*/
+
+.imgSubBox2 > p{
+    writing-mode:vertical-lr;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.imgSubBox2 > p{
+    text-transform: uppercase;
+}
+
+/*5-footer*/
+
+footer{
+    margin-top: auto;
+    background-color: #1a1a1a;
+    padding: 25px;
+}
+
+footer > p{
+    text-align: center;
+    color: white;
+}
+
+
+/*
+---------------------------
+------ MEDIA QUERIES ------
+---------------------------
+*/
+
+@media only screen and (min-width: 600px) {
+
+
+    .img{
+        max-width: 150px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .box1{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .ImgBox{
+        width: 33.3%;
+    }
+
+    .mainBox > div:nth-child(5){
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+
+    .img{
+        max-width: 200px;
+    }
+}
